@@ -24,6 +24,7 @@
     align-items:center;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
     color: var(--primary-color);
 }
 
@@ -51,6 +52,7 @@
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
+    text-decoration: none;
     position: relative;
 }
 
