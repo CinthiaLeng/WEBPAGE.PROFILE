@@ -1,0 +1,48 @@
+:root{
+    --theme-color: white;
+    --text-color: black;
+    --primary-color: rgb(93, 93, 194);
+    --secondary-color: rgb(228, 120, 204);
+    --text-color-inverse: white;
+    --navbar-shadow-color: rgb(174, 133, 187);
+    --menu-mobile-background-color: rgb(131, 10, 131);
+
+}
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+main{
+    scroll-margin-top: 90px;
+}
+
+
+section[id]{
+    scroll-margin-top: 90px;
+}
+
+body{
+    font-family: "Monserrat", sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 90px;
+}
+
+
+a{
+    text-decoration: none;
+color: var(--text-color);
+}
