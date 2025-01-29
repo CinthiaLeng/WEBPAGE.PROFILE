@@ -1,7 +1,7 @@
 *{
     margin: 0;
     border: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 
@@ -11,7 +11,7 @@
     font-size: 18px;
     border-radius: 14px;
     width: 100%;
-    padding: 25px;
+    padding: 20px;
     display: grid;
     gap: 30px;
 }
@@ -50,6 +50,27 @@
     text-transform: uppercase;
 }
 
+.card-body{
+    background-color: var(--secondary-color);
+
+}
+
+.border border-info{
+    width: 6px;
+}
+
+.quote-text{
+    font-size: smaller;
+    font-style: italic;
+    font-weight:400;
+    text-align: center;
+    color: var(--text-color-inverse);
+}
+
+
+.contact-form-group{
+    margin: 10px 10px;
+}
 
 .contact-form input,
 .contact-form textarea{
@@ -84,10 +105,15 @@
 }
 
 
+.social{
+ 
+   
+}
+
 .social-list{
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -104,8 +130,9 @@ filter: drop-shadow(0 0 14px var(--text-color-inverse));
 
 
 .contact{
-    max-width: 980px;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 50px;
+    font-size: 20px;
    
 }
 
@@ -118,7 +145,7 @@ filter: drop-shadow(0 0 14px var(--text-color-inverse));
 
 .contact-details-group,
 .contact-form-group{
-    display: grid;
+    display: inline-flexbox;
     gap: 3px;
 }
 
@@ -139,6 +166,7 @@ filter: drop-shadow(0 0 14px var(--text-color-inverse));
 
 .contact-form{
     grid-area: form;
+    width: 100%;
 }
 
 .social{

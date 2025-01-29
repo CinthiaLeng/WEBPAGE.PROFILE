@@ -1,8 +1,8 @@
+
 .services{
     max-width: 980px;
     margin: 0 auto;
 }
-
 
 
 .services-title{
@@ -49,6 +49,10 @@ margin: 10px;
 /* desktop version */
 
 @media(min-width: 950px){
+    
+    
+    
+    
     .services-title{
         font: size 45px;
         

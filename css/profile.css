@@ -1,5 +1,10 @@
 /* mobile first */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .profile-info{
     margin-bottom: 25px;
    
@@ -9,22 +14,18 @@
     width: 85%;
     max-width: 400px;
     border-radius: 40%;
+    position: relative;
     
 }
 
-.profile-image-section{
-    position: relative;
-}
+
 
 .profile-image-line{
     background-color: var(--secondary-color);
     position: absolute;
-    width: 100%;
-    height: 12px;
-    left: 0;
-    bottom: 0;
-   
-   
+    width: 85%;
+    height: 10px;
+    
 }
 
 .profile{
