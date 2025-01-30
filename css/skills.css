@@ -30,8 +30,18 @@
 @media(min-width: 950px){
 
 .skills{
+    margin-left: 300px;
     align-items: center;
     
+}
+
+
+.skills-title{
+    font-size: 30;
+    padding-bottom: 5%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .list-group-item{
@@ -43,12 +53,5 @@
 }
 
 
-.skills-title{
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-size: 25px;
-}
 
 }
