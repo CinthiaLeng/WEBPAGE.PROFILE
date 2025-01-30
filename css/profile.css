@@ -10,23 +10,27 @@
    
 }
 
+/* css for image and line responsive */
+
+.profile-image-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align contents */
+     
+}
+
+
+/* css for image and line responsive */
+
 .profile-img{
-    width: 85%;
-    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    max-width: 450px;
     border-radius: 40%;
-    position: relative;
-    
+    align-content: center;
 }
 
-
-
-.profile-image-line{
-    background-color: var(--secondary-color);
-    position: absolute;
-    width: 85%;
-    height: 10px;
-    
-}
 
 .profile{
     text-align: center;
@@ -139,8 +143,6 @@ filter: brightness(130%);
         height: 12px;
         left: 0;
         bottom: 0;
-       
-       
     }
 
     

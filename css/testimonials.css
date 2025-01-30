@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
-.d-block w-100{
-    
+
+.testimonials{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.testimonials-title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.carousel.item{
+    width: 100%;
 }
