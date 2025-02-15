@@ -367,7 +367,7 @@ a {
 }
 .contact .contact-text a:hover {
   text-decoration: underline;
-  /* Underline on hover */
+  /* Underline on hover! */
 }
 .contact .card-body {
   background-color: rgb(228, 120, 204);
