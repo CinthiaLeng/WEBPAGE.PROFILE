@@ -1,0 +1,1 @@
+Esta versión tiene el sass. No llegué a pasar las medias queries. El diseño se modificó y ahora no se ve bien, voy a tener que encontrar las fallas en el nesting, que seguro es lo que genera los cambios y desalineaciones.
