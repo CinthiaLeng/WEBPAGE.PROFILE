@@ -1,0 +1,116 @@
+/* navbar with nesting*/
+
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+
+.top-header {
+    position: fixed;
+    background-color: nth($list-color, 1);
+    box-shadow: 0 4px 5px nth($list-color, 6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: nth($font-sizes, 2);
+    font-weight: nth($font-weights, 2);
+    text-decoration: none;
+    color: nth($list-color, 3);
+}
+
+
+.logo img {
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+
+.logo-image-hover:hover {
+    filter: drop-shadow(0 0 5px nth($list-color, 6));
+    cursor: pointer;
+}
+
+.logo-text-hover:hover {
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu a {
+    color: nth($list-color, 2);
+    font-size: nth($font-sizes, 3);
+    font-weight: nth($font-weights, 1);
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    background-color: nth($list-color, 4);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.menu a.selected::after{
+    opacity: 0.8;
+}
+
+.menu a:hover::after{
+    opacity: 0.8;
+}
+
+
+.menu a:hover{
+    color: nth($list-color, 3);
+}
+
+
+.open-menu{
+    display: none;
+}
+
+.close-menu{
+    display: none;
+}
+
+}
+
+
+
+
+

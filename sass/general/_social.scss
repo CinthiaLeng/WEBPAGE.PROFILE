@@ -1,0 +1,35 @@
+// import all the utilities
+
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+// import mixin for social section
+
+@import "../utilities/mixin";
+
+/* social section */
+
+
+.social {
+    grid-area: social;
+    padding-right: 10%;
+
+
+    .social-list {
+        list-style: none;
+        @include skills-flex;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    
+    
+    .social-list img:hover {
+        filter: drop-shadow(0 0 14px nth($list-color, 9));
+    }
+    
+    }
+

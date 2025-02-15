@@ -1,0 +1,31 @@
+// import all the utilities
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+// import mixin for testimonials
+
+@import "../utilities/mixin";
+
+/* testimonials section */
+
+
+
+.testimonials {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.testimonials-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px;
+    padding-bottom: 5px;
+    font-weight: nth($font-weights, 3);
+    font-size: nth($font-sizes, 5);
+}
+
+.carousel.item {
+    width: 100%;
+}

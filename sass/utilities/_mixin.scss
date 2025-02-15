@@ -1,0 +1,33 @@
+/* mixin for .skills */
+
+@mixin skills-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin skills-list-group-flex {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@mixin list-group-item-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+
+@mixin box-shadow($x: 0, $y: 4px, $blur: 10px, $color: rebeccapurple) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin services-list-flex {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

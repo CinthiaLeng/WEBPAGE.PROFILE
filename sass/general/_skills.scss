@@ -1,0 +1,49 @@
+// import all the utilities
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+// import mixin for skills
+
+@import "../utilities/mixin";
+
+/* skills section */
+
+.skills {
+    width: 100%;
+    max-width: 450px;
+    @include skills-flex;
+    padding-bottom: 30px;
+
+
+    .skills-title {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-weight: nth($font-weights, 3);
+        font-size: nth($font-sizes, 5);
+    }
+
+
+
+    .skills-list-group{
+        width: 90%;
+        @include skills-list-group-flex;
+    
+    }
+
+
+    .list-group-item{
+        list-style: none;
+        font-weight: nth($font-weights, 1);
+        font-size: larger;
+        width: 100%;
+        max-width: 450px;
+        @include list-group-item-flex;
+        margin-bottom: 10px;
+    }
+
+}
+
+

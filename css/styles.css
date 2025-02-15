@@ -31,6 +31,16 @@ a {
   color: black;
 }
 
+/* footer section */
+.text-body {
+  text-decoration: none;
+}
+
+.text-body:hover {
+  filter: contrast(150%);
+  letter-spacing: 1px;
+}
+
 /* navbar with nesting*/
 .top-header {
   position: fixed;
@@ -405,7 +415,7 @@ a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
   color: rgb(223, 212, 212);
-  border: 3px solid var(--secondary-color);
+  border: 3px solid rgb(228, 120, 204);
   cursor: pointer;
 }
 .contact .contact-form-submit:hover {
@@ -428,7 +438,7 @@ a {
   align-items: center;
 }
 .social .social-list img:hover {
-  filter: drop-shadow(0 0 14px var(--footer-filter-color));
+  filter: drop-shadow(0 0 14px rgb(68, 6, 68));
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

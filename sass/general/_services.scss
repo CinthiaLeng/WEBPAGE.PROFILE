@@ -1,0 +1,58 @@
+// import all the utilities
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+// import mixin for services
+
+@import "../utilities/mixin";
+
+/* services section */
+
+
+.horizontal-padding {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.vertical-padding {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+.services {
+    max-width: 450px;
+    margin: 0 auto;
+
+    .services-title {
+        font-size: nth($font-sizes, 7);
+        padding-bottom: 5%;
+        font-weight: nth($font-weights, 3);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+    .services-items {
+        font-size: nth($font-sizes, 3);
+        font-weight: nth($font-weights, 1);
+        @include box-shadow;
+        border-radius: 42px;
+        padding: 0.5em 0.7em;
+        margin: 10px;
+        text-align: center;
+
+    }
+
+
+    .services-list {
+        @include services-list-flex;
+        padding: 0;
+
+
+    }
+
+
+}

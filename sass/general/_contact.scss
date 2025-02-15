@@ -1,0 +1,133 @@
+// import all the utilities
+
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+// import mixin for contact section
+
+@import "../utilities/mixin";
+
+/* contact section */
+
+
+.contact {
+    background-color: nth($list-color, 3);
+    height: fit-content;
+    color: nth($list-color, 5);
+    font-size: nth($font-sizes, 3);
+    border-radius: 14px;
+    width: 100%;
+    padding: 20px 20px;
+    display: grid;
+    gap: 20px;
+
+    
+    .contact-title {
+        font-size: nth($font-sizes, 6);
+        font-weight: nth($font-weights, 1);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .contact-label {
+        color: nth($list-color, 4);
+    }
+
+    .contact-details,
+    .contact-form {
+        display: grid;
+        gap: 0px;
+    }
+
+
+    .contact-details-group,
+    .contact-form-group {
+        display: grid;
+        gap: 3px;
+    }
+
+
+    .contact-label {
+        font-weight: nth($font-weights, 1);
+        text-transform: uppercase;
+    }
+
+
+    .contact-text a {
+        text-decoration: none;
+        /* Removes underline */
+        color: #becedf;
+        font-weight: nth($font-weights, 2);
+        /* Makes it stand out */
+    }
+
+    .contact-text a:hover {
+        text-decoration: underline;
+        /* Underline on hover */
+    }
+
+
+    .card-body {
+        background-color: nth($list-color, 4);
+
+
+    }
+
+    .border border-info {
+        width: 6px;
+    }
+
+    .quote-text {
+        font-size: smaller;
+        font-style: italic;
+        font-weight: 400;
+        text-align: center;
+        color: nth($list-color, 5);
+    }
+
+
+    .contact-form-group {
+        margin: 10px 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        border-radius: 7px;
+        border: none;
+        height: 30px;
+        padding: 5px 5px;
+    }
+
+
+    .contact-form textarea {
+        height: auto;
+        resize: horizontal;
+        align-items: center;
+    }
+
+
+    .contact-form-submit {
+        width: 100%;
+        height: 50px;
+        background-color: nth($list-color, 2);
+        border-radius: 7px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: nth($font-sizes, 2);
+        color: nth($list-color, 5);
+        border: 3px solid nth($list-color, 4);
+        cursor: pointer;
+    }
+
+
+    .contact-form-submit:hover {
+        @include box-shadow(0, 0, 14px, nth($list-color, 4));
+    }
+
+}
+
+
+
+

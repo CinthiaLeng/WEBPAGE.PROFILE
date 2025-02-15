@@ -1,0 +1,60 @@
+/* reset */
+
+@import "../utilities/list-color";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* general styles */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+main {
+    scroll-margin-top: 90px;
+}
+
+
+main[id] {
+    scroll-margin-top: 90px;
+}
+
+body {
+    font-family: "Monserrat", sans-serif;
+    background-color: nth($list-color, 1);
+    color: nth($list-color, 2);
+    padding-top: 90px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: nth($list-color, 2);
+}
+
+
+/* footer section */
+
+
+.text-body {
+    text-decoration: none;
+}
+
+
+
+.text-body:hover {
+    filter: contrast(150%);
+    letter-spacing: 1px;
+}
+
