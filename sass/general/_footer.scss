@@ -1,0 +1,18 @@
+// import all the utilities
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+
+
+    /* footer css */
+
+    .text-body {
+        text-decoration: none;
+    }
+
+    .text-body:hover {
+        filter: contrast(150%);
+        letter-spacing: 1px;
+    }

@@ -1,0 +1,372 @@
+// import all the utilities
+
+
+@import "../utilities/list-color";
+@import "../utilities/font-sizes";
+@import "../utilities/font-weights";
+
+// import mixin 
+
+@import "../utilities/mixin";
+
+/* version: desktop */
+
+@media(min-width: 950px) {
+
+
+    .horizontal-padding{
+        margin-left: 10%;
+        margin-right: 30%;
+
+    }
+
+    .vertical-padding{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        margin-bottom: 0;
+        .profile-img {
+            width: 130%;
+            border-radius: 40%;
+            position: relative;
+            margin-top: 25px;
+            max-width: 800px;
+            transform: scaleX(-1);
+    
+        }
+
+        
+    .profile-img {
+        width: 130%;
+        border-radius: 40%;
+        position: relative;
+        margin-top: 25px;
+        max-width: 800px;
+        transform: scaleX(-1);
+
+    }
+
+
+    }
+
+
+
+    .profile {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0px auto;
+        align-items: center;
+
+        .profile-title {
+            font-size: nth($font-sizes, 7);                   
+            font-weight: bolder;
+            margin: 0;
+            color: nth($list-color, 3);
+    
+            .ubuntu-bold {
+                font-family: "Ubuntu", serif;
+                font-weight: nth($font-weights, 4);
+                font-style:normal;
+            }
+        }
+    
+    
+        .profile-details {
+            font-size: nth($font-sizes, 4);                 
+            font-weight: nth($font-weights, 1);                 
+            line-height: 1.5;
+            max-width: 850px;
+            margin-right: 70px;
+            margin-top: 40px;
+            text-align: justify;
+        }
+    
+    
+        .profile-image-section {
+            position: relative;
+        }
+    
+    
+    
+        .profile-image-line {
+            background-color: nth($list-color, 4);
+            position: absolute;
+            width: 130%;
+            height: 12px;
+            left: 0;
+            bottom: 0;
+        }
+    
+    
+        .profile-btn {
+            background-color: nth($list-color, 4);
+            color: nth($list-color, 5);
+            font-size: nth($font-sizes, 2);                      1
+            padding: 0.5em 1em;
+            border-radius: 7px;
+            border-color: nth($list-color, 6);
+            border-style: double;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    
+    }
+
+
+    
+}
+
+/* media queries for desktop - skills */
+
+@media(min-width: 950px) {
+
+
+    .skills{
+        width: 100%;
+        display:flex;
+        margin: 0 auto;
+        padding: 30px 30px;
+
+        
+    .skills-list-group{
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .list-group-item{
+        font-weight: nth($font-weights, 1);                
+        font-size: nth($font-sizes, 5);                       
+        letter-spacing: 1.5px;
+        
+    }
+    
+    .skills-title {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        font-weight: nth($font-weights, 3);                     
+        font-size: nth($font-sizes, 7);                          
+    }
+    
+
+        
+    
+    }
+    
+    }
+    
+    
+    
+  
+    /* desktop version - services */
+
+    @media(min-width: 950px) {
+
+
+
+
+        .services-title {
+            font: nth($font-sizes, 7);                 5
+
+        }
+
+
+        .services-items {
+            font-size: nth($font-sizes, 4);                       6
+            margin: 20px;
+
+        }
+
+
+        .services-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
+
+        .horizontal-padding {
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        .vertical-padding {
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+
+    }
+
+
+    
+    /* media query for desktop  experience */
+
+    @media (min-width: 950px){
+
+
+        .color-filling {
+            background-color: nth($list-color, 3);
+            width: 100%;
+            height: 1000px;
+        }
+
+        .experience-title {
+            font-size: nth($font-sizes, 7);                     5
+            padding-bottom: 5%;
+            text-transform: uppercase;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: auto 2px auto;
+
+            
+
+        .experience-line {
+            background-color: nth($list-color, 5);
+            position: relative;
+        }
+        }
+
+
+
+
+        .experience-line::before,
+        .experience-line::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: nth($list-color, 5);
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            left: -9px;
+        }
+
+
+
+        .experience-line::after {
+            top: 100%;
+            z-index: 1;
+        }
+
+
+
+        .experience-right {
+            text-align: right;
+        }
+    }
+  
+
+
+    
+    /* media queries for desktop - testimonials*/
+
+    @media(min-width: 950px) {
+
+        .testimonials-title {
+            font-size: nth($font-sizes, 7);               5
+            padding-bottom: 5%;
+            text-transform: uppercase;
+        }
+
+        .horizontal-padding {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .vertical-padding {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .testimonial-card {
+            max-width: 60%;
+
+
+        }
+
+        .carousel.item {
+            width: 60%;
+        }
+    }
+
+
+    
+
+    /* media queries for desktop - contact */
+
+    @media(min-width: 950px) {
+
+
+        .contact {
+            width: 80%;
+            margin: 50px auto;
+            align-content: center;
+            align-items: center;
+            display: grid;
+            grid:
+                "title form" auto "details form" 4fr "social form" auto / 2fr 2fr;
+
+        }
+
+        .contact-title {
+            text-align: left;
+            font-size: nth($font-sizes, 7);             5
+        }
+
+
+
+        .contact-details-group,
+        .contact-form-group {
+            display: inline-flexbox;
+            gap: 3px;
+        }
+
+
+        
+
+        .social {
+            grid-area: social;
+        }
+
+
+        .social-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 120px;
+            align-items: center;
+        }
+
+        .contact-title {
+            grid-area: title;
+        }
+
+        .contact-details {
+            grid-area: details;
+        }
+
+        .contact-form {
+            grid-area: form;
+            width: 100%;
+        }
+
+    }
+
+
+
